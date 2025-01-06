@@ -1,0 +1,83 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#theme-toggle {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 18px;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+}
+
+/* Project Cards */
+.project-card {
+    background: white;
+    padding: 20px;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Skills Icons */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 40px;
+}
+
+.skills-container i {
+    color: #333;
+    transition: transform 0.3s;
+}
+
+.skills-container i:hover {
+    transform: scale(1.2);
+    color: #007BFF;
+}
