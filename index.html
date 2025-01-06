@@ -3,66 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Antoinette Hammond | Data & Reporting Professional</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <header>
-        <h1>My Portfolio</h1>
+        <h1>Antoinette Hammond</h1>
+        <p>Data & Reporting Professional | Power BI | AWS | SQL</p>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><button id="theme-toggle">🌙</button></li>
+                <li><a href="Antoinette_CV.pdf" download>Download CV</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a web developer passionate about building amazing applications.</p>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="profile.jpg" alt="Antoinette Hammond" class="profile-pic">
+            <p>
+            A data-driven professional with experience in the public sector, specialising in 
+            data visualization, cloud technologies, and reporting. Skilled in Power BI, SQL, 
+            and AWS to optimize workflows, analyze large datasets, and provide actionable 
+            insights that support decision-making.
+            </p>
     </section>
 
+    <section id="cv">
+        <h2>My CV</h2>
+        <p>You can view and download my CV below:</p>
+        <a href="https://docs.google.com/document/d/1-7ByjsAQcTO6qOerjMvntAN-QaUDLdLFZtSx6AFlQjw/export?format=pdf" 
+           class="cv-button" 
+           target="_blank">
+           📄 View My CV
+        </a>
+    </section>
+    
+
     <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fab fa-js"></i>
-            <i class="fab fa-react"></i>
-            <i class="fab fa-node-js"></i>
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>Data Visualization: Power BI, Tableau, Amazon Athena</li>
+            <li>Programming & Cloud: SQL, Python, AWS (EC2, S3, RDS, Lambda)</li>
+            <li>Project Management: Jira, Confluence, Monday.com, Asana</li>
+            <li>CRM Tools: Salesforce, Microsoft Outlook, WebEx</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="job">
+            <h3>Data & Reporting Officer - Croydon Council</h3>
+            <p><i>October 2021 - Present</i></p>
+            <ul>
+                <li>Developed Power BI dashboards to improve reporting accuracy by 20%.</li>
+                <li>Utilized AWS to migrate data, reducing costs by 20%.</li>
+                <li>Automated reporting tasks using AWS Lambda, saving 10 hours per month.</li>
+            </ul>
+        </div>
+        
+        <div class="job">
+            <h3>Technical Manager - Barnet Council</h3>
+            <p><i>August 2016 - October 2021</i></p>
+            <ul>
+                <li>Analyzed service request data to improve efficiency.</li>
+                <li>Created dashboards in Excel to track key metrics.</li>
+                <li>Streamlined licensing case processing, reducing time by 15%.</li>
+            </ul>
         </div>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
         <div class="project-card">
-            <h3>Project 1</h3>
-            <p>Brief description.</p>
+            <h3>Power BI Housing Analytics Dashboard</h3>
+            <p>Developed a dashboard for affordable housing tracking, increasing data transparency.</p>
         </div>
         <div class="project-card">
-            <h3>Project 2</h3>
-            <p>Brief description.</p>
+            <h3>AWS Lambda Automated Reporting</h3>
+            <p>Built an automated reporting system using AWS Lambda, reducing manual work.</p>
         </div>
+    </section>
+
+    <section id="education">
+        <h2>Education & Certifications</h2>
+        <ul>
+            <li>AWS Academy - Optima Training & Consultancy LTD (2021)</li>
+            <li>Power BI Data Analyst Associate - Croydon Council (2022)</li>
+            <li>Excel Fundamentals - DataCamp (2023)</li>
+        </ul>
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send</button>
-        </form>
+        <p>Email: <a href="mailto:itisnette@gmail.com">itisnette@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://uk.linkedin.com/in/antoinettehammond/">View Profile</a></p>
     </section>
 
     <footer>
-        <p>&copy; 2025 My Portfolio</p>
+        <p>&copy; 2025 Antoinette Hammond</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
