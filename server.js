@@ -16,3 +16,7 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
     console.log(`Portfolio is running at http://localhost:${port}`);
 });
+// 📱 Mobile Navbar Toggle
+function toggleMenu() {
+    document.getElementById("nav-menu").classList.toggle("active");
+}
