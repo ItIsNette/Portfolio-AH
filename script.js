@@ -33,3 +33,15 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(section);
     });
 });
+window.addEventListener("scroll", function () {
+    let header = document.querySelector("header");
+    let body = document.querySelector("body");
+
+    if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+        body.classList.add("scrolled"); // Reduce padding when scrolling
+    } else {
+        header.classList.remove("scrolled");
+        body.classList.remove("scrolled"); // Reset padding at the top
+    }
+});
