@@ -53,6 +53,7 @@ function toggleMenu() {
 // 🌙 Dark Mode Toggle
 function toggleDarkMode() {
     document.body.classList.toggle("dark-mode");
+
     // Save preference in local storage
     if (document.body.classList.contains("dark-mode")) {
         localStorage.setItem("theme", "dark");
@@ -67,3 +68,4 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.classList.add("dark-mode");
     }
 });
+
