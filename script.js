@@ -10,3 +10,11 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     event.preventDefault();
     alert('Thank you for reaching out! I will get back to you soon.');
 });
+window.addEventListener("scroll", function () {
+    let header = document.querySelector("header");
+    if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});

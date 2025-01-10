@@ -21,14 +21,27 @@ body {
     z-index: -1;
 }
 /* Header Styling */
+/* Sticky Navbar */
 header {
-    background: rgba(139, 94, 59, 0.8); /* Semi-transparent brown */
+    position: fixed; /* Makes the navbar always stay at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(139, 94, 59, 0.9); /* Semi-transparent brown */
     color: white;
-    padding: 20px;
+    padding: 15px 0;
     font-size: 20px;
     font-weight: bold;
-    border-bottom: 3px solid #DFF9F4; /* Adds a pastel blue border */
+    border-bottom: 3px solid #DFF9F4; /* Pastel blue border */
+    z-index: 1000; /* Ensures navbar stays above all content */
+    transition: background 0.3s ease-in-out;
 }
+
+/* Add Padding to Prevent Content Overlapping */
+body {
+    padding-top: 80px; /* Adjust based on your navbar height */
+}
+
 
 /* Navigation Bar */
 nav ul {
@@ -142,4 +155,34 @@ footer {
     color: white;
     padding: 15px;
     font-size: 14px;
+}
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hover Animation for CV & Project Buttons */
+.cv-button, .project-card a {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.cv-button:hover, .project-card a:hover {
+    transform: scale(1.05);
+    background-color: #FDDCD4; /* Light pastel pink */
+}
+
+/* Project Cards Animation */
+.project-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+/* Change Navbar Background on Scroll */
+header.scrolled {
+    background: rgba(139, 94, 59, 1); /* Slightly darker when scrolling */
+    transition: background 0.3s ease-in-out;
 }
