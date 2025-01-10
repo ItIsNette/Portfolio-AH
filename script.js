@@ -45,3 +45,25 @@ window.addEventListener("scroll", function () {
         body.classList.remove("scrolled"); // Reset padding at the top
     }
 });
+// 📱 Mobile Navbar Toggle
+function toggleMenu() {
+    document.getElementById("nav-menu").classList.toggle("active");
+}
+
+// 🌙 Dark Mode Toggle
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+    // Save preference in local storage
+    if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+}
+
+// 🌓 Load Dark Mode Preference
+document.addEventListener("DOMContentLoaded", () => {
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
+    }
+});

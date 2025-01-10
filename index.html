@@ -12,8 +12,11 @@
     <header>
         <h1>Antoinette Hammond</h1>
         <p>Data & Reporting Professional | Power BI | AWS | SQL</p>
+    
+        <!-- Navbar -->
         <nav>
-            <ul>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul id="nav-menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -21,12 +24,16 @@
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="https://docs.google.com/document/d/1-7ByjsAQcTO6qOerjMvntAN-QaUDLdLFZtSx6AFlQjw/export?format=pdf" 
-                    target="_blank">
-                    📄 Download CV
-             </a></li>             
+                       target="_blank">
+                       📄 Download CV
+                </a></li>
             </ul>
+    
+            <!-- Dark Mode Toggle Button -->
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
         </nav>
     </header>
+    
 
     <section id="about">
         <section id="about">
