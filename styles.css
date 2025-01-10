@@ -431,4 +431,16 @@ section.show {
     padding: 60px 20px;
     text-align: center;
 }
+/* Fix "About Me" Title Visibility */
+#about h2 {
+    font-size: 28px; /* Increase title size */
+    font-weight: bold;
+    color: #5A3E36; /* Dark brown for better contrast */
+    text-align: center;
+    text-transform: uppercase; /* Optional: Makes title stand out */
+    padding: 15px 0;
+    border-bottom: 3px solid #DFF9F4; /* Adds a subtle underline */
+    width: fit-content;
+    margin: 0 auto;
+}
 
