@@ -426,4 +426,9 @@ section.show {
 #backToTop:hover {
     background: #FDDCD4;
 }
+/* Add space above "About Me" */
+#about {
+    padding: 60px 20px;
+    text-align: center;
+}
 
