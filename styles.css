@@ -81,12 +81,13 @@ section {
 /* CV Download Button */
 .cv-button {
     display: inline-block;
-    padding: 12px 25px;
-    background: #F7A8A2; /* Soft pastel pink */
+    padding: 12px 20px;
+    background-color: #F7A8A2; /* Soft pastel pink */
     color: white;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
+    margin: 10px;
     transition: background 0.3s, transform 0.2s;
 }
 
@@ -94,6 +95,7 @@ section {
     background: #FDDCD4; /* Lighter pastel pink */
     transform: scale(1.05);
 }
+
 
 /* Profile Picture */
 .profile-pic {
