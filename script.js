@@ -47,8 +47,16 @@ window.addEventListener("scroll", function () {
 });
 // 📱 Mobile Navbar Toggle
 function toggleMenu() {
-    document.getElementById("nav-menu").classList.toggle("active");
+    let navMenu = document.getElementById("nav-menu");
+    navMenu.classList.toggle("active");
 }
+
+// Close menu when clicking a nav link (fixes the issue)
+document.querySelectorAll("nav ul li a").forEach(anchor => {
+    anchor.addEventListener("click", function () {
+        document.getElementById("nav-menu").classList.remove("active");
+    });
+});
 
 // 🌙 Dark Mode Toggle
 function toggleDarkMode() {
@@ -73,4 +81,34 @@ document.addEventListener("DOMContentLoaded", function () {
         section.style.display = "block";
     });
 });
+// 🎬 Animate sections when scrolling
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    }, { threshold: 0.2 });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
+// 🎯 Back to Top Button
+const backToTopButton = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        backToTopButton.classList.add("show");
+    } else {
+        backToTopButton.classList.remove("show");
+    }
+});
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
 
