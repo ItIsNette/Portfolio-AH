@@ -1,17 +1,26 @@
-body {
+/* General Styling */
+body { 
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    height: 100vh;
+    background: linear-gradient(to right, #8B5E3B, #DFF9F4, #FFF9D9, #FDDCD4, #F7A8A2);
+    background-attachment: fixed;
+    color: #5A3E36; /* Soft brown for readability */
     text-align: center;
 }
 
+/* Header Styling */
 header {
-    background-color: #333;
+    background: rgba(139, 94, 59, 0.8); /* Semi-transparent brown */
     color: white;
     padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 3px solid #DFF9F4; /* Adds a pastel blue border */
 }
 
+/* Navigation Bar */
 nav ul {
     list-style: none;
     padding: 0;
@@ -25,64 +34,100 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
+nav ul li a:hover {
+    color: #FFF9D9; /* Light pastel yellow on hover */
+}
+
+/* Sections */
 section {
     padding: 50px 20px;
     max-width: 800px;
     margin: auto;
+    background: rgba(255, 255, 255, 0.8); /* Soft white transparency */
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Job Experience Styling */
 .job {
-    background: white;
+    background: rgba(255, 249, 217, 0.8); /* Light pastel yellow transparency */
     padding: 15px;
     margin: 10px 0;
     border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Project Cards */
 .project-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.85); /* White with slight transparency */
     padding: 20px;
-    margin: 10px auto;
+    margin: 20px auto;
     width: 80%;
     max-width: 400px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* CV Download Button */
 .cv-button {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
+    padding: 12px 25px;
+    background: #F7A8A2; /* Soft pastel pink */
     color: white;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background 0.3s, transform 0.2s;
 }
 
 .cv-button:hover {
-    background-color: #0056b3;
+    background: #FDDCD4; /* Lighter pastel pink */
+    transform: scale(1.05);
 }
+
+/* Profile Picture */
 .profile-pic {
-    width: 150px; /* Adjust the size */
+    width: 150px;
     height: 150px;
-    border-radius: 50%; /* Makes it circular */
+    border-radius: 50%;
     object-fit: cover;
     display: block;
     margin: 20px auto;
-    border: 3px solid #007bff; /* Optional border */
+    border: 4px solid #8B5E3B; /* Brown border */
 }
+
+/* Project Buttons */
 .project-card a {
     display: inline-block;
     margin-top: 10px;
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: white;
+    padding: 12px 20px;
+    background: #DFF9F4; /* Pastel Blue */
+    color: #5A3E36; /* Soft brown */
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background 0.3s, transform 0.2s;
 }
 
 .project-card a:hover {
-    background-color: #0056b3;
+    background: #FFF9D9; /* Pastel yellow */
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: rgba(139, 94, 59, 0.9); /* Semi-transparent brown */
+    color: white;
+    padding: 15px;
+    font-size: 14px;
 }
