@@ -20,7 +20,10 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#Antoinette_CV.pdf" download>Download CV</a></li>
+                <li><a href="https://docs.google.com/document/d/1-7ByjsAQcTO6qOerjMvntAN-QaUDLdLFZtSx6AFlQjw/export?format=pdf" 
+                    target="_blank">
+                    📄 Download CV
+             </a></li>             
             </ul>
         </nav>
     </header>
@@ -138,5 +141,14 @@
         <p>&copy; 2025 Antoinette Hammond</p>
     </footer>
 
-</body>
+    <script>
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const section = document.querySelector(this.getAttribute('href'));
+                section.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+    </body>
 </html>
