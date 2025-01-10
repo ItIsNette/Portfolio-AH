@@ -443,4 +443,9 @@ section.show {
     width: fit-content;
     margin: 0 auto;
 }
+/* Add space above "About Me" to prevent overlap */
+#about {
+    padding: 120px 20px 50px; /* Increased top padding */
+    text-align: center;
+}
 
