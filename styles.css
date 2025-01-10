@@ -303,4 +303,9 @@ body.dark-mode .cv-button {
 .dark-mode-toggle:hover {
     background: rgba(255, 255, 255, 0.2);
 }
+/* Ensure all sections are visible */
+section {
+    display: block !important;
+    opacity: 1 !important;
+}
 

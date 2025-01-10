@@ -68,4 +68,9 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.classList.add("dark-mode");
     }
 });
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("section").forEach(section => {
+        section.style.display = "block";
+    });
+});
 
