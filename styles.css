@@ -370,7 +370,7 @@ section.show {
     padding: 20px;
     margin: 20px auto;
     width: 90%;
-    max-width: 500px;
+    max-width: 600px; /* Increased width for large visuals */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s;
@@ -447,5 +447,31 @@ section.show {
 #about {
     padding: 120px 20px 50px; /* Increased top padding */
     text-align: center;
+}
+.powerbi-gif {
+    width: 100%;
+    max-width: 600px; /* Ensures it's not too large */
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.download-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background: linear-gradient(135deg, #F7A8A2, #FDDCD4); /* Soft gradient */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0px 4px 10px rgba(255, 120, 150, 0.5);
+}
+
+.download-button:hover {
+    background: linear-gradient(135deg, #FDDCD4, #F7A8A2);
+    transform: scale(1.08);
+    box-shadow: 0px 6px 14px rgba(255, 120, 150, 0.6);
 }
 
