@@ -132,7 +132,7 @@
         </div>
 
         <div class="project-card">
-            <h3>Power BI Housing Analytics Dashboard</h3>
+            <h3>📄 Power BI Housing Analytics Dashboard</h3>
             <p>Analyzing UK housing affordability trends over time.</p>
             <img src="https://github.com/ItIsNette/Portfolio-AH/raw/main/projects/housing-dashboard.gif" 
                  alt="Power BI Dashboard Demo" class="powerbi-gif">
@@ -143,12 +143,20 @@
         
     
         <div class="project-card">
-            <h3>🚀 AWS Lambda Automated Reporting</h3>
-            <p>Built an automated reporting system using AWS Lambda, reducing manual work.</p>
-            <a href="http://YOUR_AWS_EC2_PUBLIC_IP" target="_blank" class="project-button">
-                🔗 View AWS Report
-            </a>
+            <h3>🚀 AWS Lambda Automated Reports</h3>
+            <p>Automatically generated housing reports using AWS Lambda.</p>
+            <a href="https://housing-reports-bucket.s3.amazonaws.com/latest-housing-report.csv" 
+               class="download-button" target="_blank">View Latest Report</a>
+            <p id="last-updated"></p>
         </div>
+        
+        <script>
+            fetch("https://housing-reports-bucket.s3.amazonaws.com/latest-housing-report.csv")
+                .then(response => response.headers.get("last-modified"))
+                .then(date => {
+                    document.getElementById("last-updated").innerText = "Last Updated: " + date;
+                });
+        </script>        
     </section>
     
 
